@@ -12,5 +12,5 @@ Clone the Repository:
 
 Bash
 git clone https://github.com/your-username/weather-app.git
-يُرجى استخدام الرمز البرمجي بحذر.
+
 Replace your-username with your actual GitHub username.
