@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg py-5">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><div class="logo d-flex">
+            <img src="images/logo@2x.png" alt="" />
+            <div class="logo-text ms-3">
+              <h1>Weather</h1>
+              <small>tagline goes here</small>
+            </div>
+          </div></a
+        >
+        <button
+          class="navbar-toggler text-info bg-info"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- search section -->
+    <section class="bg-image">
+      <div class="container">
+        <div class="search position-relative">
+          <input
+            type="text"
+            placeholder="Find your Location..."
+            class="w-100 text-white px-5 py-3 rounded-5 border-0 searchBox z-3"
+          />
+        </div>
+        <section class="weather">
+          <div class="container">
+            <div class="row gx-0 d-flex justify-content-center">
+              <div class="col-md-3 today-sec mt-5 rounded-3">
+                <header
+                  class="d-flex justify-content-between align-items-center px-3 py-2 today-haeder"
+                >
+                  <p class="currentDay"></p>
+                  <p class="currentMonth"></p>
+                </header>
+                <section class="today-content px-3 py-1 rounded-3">
+                  <p class="location my-3 fs-5"></p>
+                  <div
+                    class="degree d-flex justify-content-between align-items-center mb-3 overflow-hidden"
+                  >
+                    <p class="deg-num"></p>
+                    <img class="deg-icon" alt="" />
+                  </div>
+                  <p class="weather-desc"></p>
+                  <div class="forecastDay d-flex">
+                    <div class="d-flex mx-2 align-items-baseline">
+                      <i class="fa-solid fa-umbrella mx-1"></i>
+                      <p class="humidity"></p>
+                    </div>
+                    <div class="d-flex mx-2 align-items-baseline">
+                      <i class="fa-solid fa-wind mx-1"></i>
+                      <p class="wind"></p>
+                    </div>
+                    <div class="d-flex mx-2 align-items-baseline">
+                      <i class="fa-regular fa-compass mx-1"></i>
+                      <p class="compass"></p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-md-3 next-sec mt-5 rounded-3 text-center">
+                <header class="px-3 py-2 next-haeder">
+                  <p class="nextDay"></p>
+                </header>
+                <section class="next-content px-3 py-2 rounded-3">
+                  <img class="my-4 next-icon" alt="" />
+                  <p class="maxDegree"></p>
+                  <p class="minDegree"></p>
+                  <p class="next-desc"></p>
+                </section>
+              </div>
+              <div class="col-md-3 next-sec mt-5 rounded-3 text-center">
+                <header class="px-3 py-2 next-haeder">
+                  <p class="nextDay"></p>
+                </header>
+                <section class="next-content px-3 py-2 rounded-3">
+                  <img class="my-4 next-icon" alt="" />
+                  <p class="maxDegree"></p>
+                  <p class="minDegree"></p>
+                  <p class="next-desc"></p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- empty section -->
+    <div class="empty-sec"></div>
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="subscribe-form position-relative">
+          <input
+            type="text"
+            placeholder="Enter your email to subscribe..."
+            class="text-white px-5 py-3 rounded-5 border-0 subInput"
+          />
+          <input id="submit" type="submit" value="Subscribe" />
+        </div>
+        <div class="d-flex justify-content-between mb-4">
+          <p class="my-4">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+          <div class="social-icons d-flex">
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icons">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icons">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </div>
+            <div class="icons">
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
