@@ -3,7 +3,7 @@ This application is a user-friendly weather app that displays the current weathe
 # Weather Application
 
 
-[Weather App] (https://your-username.github.io/weather-app/)  ```
+[Weather App] (https://halamagdi.github.io/weather-app/)  ```
 
 
 
